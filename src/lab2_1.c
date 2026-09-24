@@ -12,17 +12,21 @@
 */
 
 int sum_to_n(int n) {
-    // TODO: implement sum with a for loop
-    return 0; // placeholder
-}
+    int S=0,i;
+    for(i=1;i<=n;i++){
+        S=S+i;
+    }
+    return S;
+}// placeholder
 
 int main(void) {
     int n;
-
     printf("Enter a positive integer n: ");
     scanf("%d", &n);
-
-    // TODO: validate input, call function, and print result
-
+    while(n<1){
+        printf("ERROR!\nPlease enter an integer n>=1: ");
+        scanf("%d", &n);
+    }//in case the input is invalid, retry
+    printf("The sum of all integers from 1 up to %d is equal to %d.\n",n,sum_to_n(n));
     return 0;
 }
