@@ -47,8 +47,7 @@ int main(void) {
 void swap(int* x, int* y) {
   int z = *x;
   *x = *y;
-  *y = z;
-  ;  // TODO: swap values using a temporary variable
+  *y = z;  // TODO: swap values using a temporary variable
 }
 
 void modify_value(int* x) {
