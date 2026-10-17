@@ -1,0 +1,3 @@
+First line : Hello C! 
+Second line : Learning File manipulation.
+Third line : C is wonderful ! 
